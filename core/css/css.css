@@ -32,8 +32,7 @@ body {
 
 #principal section {
     position: absolute;
-    top: 335px;
-    left: 53px;
+    top: 320px;
     background: transparent;
     width: 739px;
     height: 511px;
@@ -43,8 +42,8 @@ body {
     width: 208px;
     height: 37px;
     background-image: url("../images/vassoura.png");
-    top: 440px;
-    left: 35px;
+    top: 470px;
+    left: 30px;
     position: absolute;
 }
 
@@ -54,8 +53,8 @@ body {
 }
 
 #principal #footer {
-    top: 475px;
-    left: 40px;
+    top: 500px;
+    left: 35px;
     position: absolute;
 }
 
@@ -65,15 +64,14 @@ body {
 
 #principal section #scroll {
     height: 450px;
-    width: 625px;
-    padding: 42px 0px 0px 23px;
+    width: 810px;
+    padding: 30px;
     position: absolute;
     overflow: hidden;
-    margin: 3px 0px 3px 3px;
 }
 
 #principal section #scroll span {
-    font-size: 24px;
+    font-size: 14px;
 }
 
 #principal header {
@@ -81,10 +79,4 @@ body {
     width: 810px;
     float: left;
     background: url('../images/header/background.jpg');
-}
-
-#fechar {
-    position: absolute;
-    top: 5px;
-    right: 5px;
 }
