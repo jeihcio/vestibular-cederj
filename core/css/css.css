@@ -18,7 +18,7 @@ body {
 #principal {
     width: 810px;
     height: 860px;
-    margin: 0px auto;
+    margin: 10px auto;
     position: relative;
     background: url('../images/background.jpg');
     -webkit-box-shadow: 0px 0px 30px 0px rgba(181, 229, 233, 0.75);
