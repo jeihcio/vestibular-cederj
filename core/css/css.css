@@ -67,7 +67,8 @@ body {
     width: 810px;
     padding: 30px;
     position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 #principal section #scroll span {
