@@ -81,3 +81,19 @@ body {
     float: left;
     background: url('../images/header/background.jpg');
 }
+
+#materiaAno {
+    position: absolute;
+    background-color: rgba(4, 78, 149, 0.5);
+    width: 200px;
+    right: 15px;
+    top: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#materiaAno .ano {
+    padding-top: 10px;
+}
