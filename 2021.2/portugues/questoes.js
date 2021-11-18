@@ -41,7 +41,27 @@ grande precisão.<br/>
 (...)<br/>
 <small>Disponível em https://www.fronteiras.com/artigos/21-ideias-marcelo-gleiser-ea-complementaridade-entre-religiao-e-ciencia - adaptado. Acesso em: 05 de
 maio de 2021</small>
-<br/><br/>`
+<br/><br/>`;
+
+var text02 = `<h3>Texto II</h3><br/>
+<h4>Sujeito de Sorte</h4>
+<small>Belchior</small>
+Presentemente eu posso me<br/>
+Considerar um sujeito de sorte<br/>
+Porque apesar de muito moço<br/>
+Me sinto são, e salvo, e forte.<br/>
+E tenho comigo pensado<br/>
+Deus é brasileiro e anda do meu lado<br/>
+E assim já não posso sofrer<br/>
+No ano passado.<br/>
+Tenho sangrado demais<br/>
+Tenho chorado pra cachorro<br/>
+Ano passado eu morri<br/>
+Mas esse ano eu não morro<br/>
+(...)<br/>
+<small>Disponível em https://www.letraz.com.br/belchior/sujeito-de-sorte/. Acesso em:
+04 de maio de 2021</small>
+<br/><br/>`;
 
 quiz = {
     0: {
@@ -84,5 +104,98 @@ quiz = {
             3: 'autoridade',
         },
         resposta: 1
+    },
+
+    2: {
+        pergunta: text01 +
+            `<b>03.</b> <i>“Você sabe que tem três milhões de anos, com
+            grande precisão.”</i><br/><br/>
+            No fragmento em destaque, assim como em outras
+            passagens do texto I, percebe-se o uso do “você”.<br/><br/>
+            O objetivo do uso desse pronome de tratamento é `,
+
+        alternativas: {
+            /* A */
+            0: `estabelecer uma aproximação maior com o leitor, de
+            modo a fazer com que haja uma sensação de interação
+            no texto`,
+            /* B */
+            1: ` definir uma participação obrigatória do leitor, a fim
+            de que ele construa uma opinião sobre o fato em discussão e se expresse`,
+            /* C */
+            2: `determinar uma relação de lugar de fala ao leitor
+            que, por sua vez, se sente comprometido com o debate
+            em foco`,
+            /* D */
+            3: `eleger o leitor como referência entre o enunciador e
+            a mensagem pretendida, para que ele possa mediar o
+            debate e opinar`,
+        },
+        resposta: 0
+    },
+
+    3: {
+        pergunta: text01 +
+            `<b>04.</b> O texto I é um artigo de opinião de natureza jornalística. Dessa forma, é possível afirmar que a função da
+            linguagem predominante no texto é a`,
+
+        alternativas: {
+            /* A */
+            0: 'emotiva',
+            /* B */
+            1: 'referencial',
+            /* C */
+            2: 'metalinguística',
+            /* D */
+            3: 'fática',
+        },
+        resposta: 1
+    },
+
+    4: {
+        pergunta: text02 +
+            `<b>05.</b> <i>“Ano passado eu morri
+            Mas esse ano eu não morro.”</i> <br/><br/>
+            
+            A relação entre os versos destacados do texto II, com
+            base na presença da conjunção “mas”, define um valor
+            semântico de`,
+
+        alternativas: {
+            /* A */
+            0: 'oposição',
+            /* B */
+            1: 'adição',
+            /* C */
+            2: 'consequência',
+            /* D */
+            3: 'tempo',
+        },
+        resposta: 0
+    },
+
+    5: {
+        pergunta: text02 +
+            `<b>06.</b> <i>“Me sinto são, e salvo, e forte.” </i>
+            <br/><br/>
+            No verso em destaque, percebe-se a repetição da conjunção “e”.<br/>
+            Tal recurso linguístico tem uma função dentro do texto II,
+            que se traduz como o objetivo de se`,
+
+        alternativas: {
+            /* A */
+            0: `convencer o leitor sobre a negligência do eu lírico,
+            ainda que o texto demonstre o contrário`,
+            /* B */
+            1: `promover autoconfiança por parte do coenunciador,
+            apesar do contexto em discussão`,
+            /* C */
+            2: `impor as características do coenunciador, embora o
+            quadro não valorize esses aspectos sentimentais`,
+            /* D */
+            3: `reforçar as sensações do eu lírico, mesmo que o
+            contexto traga à tona muitas dificuldades`,
+        },
+        resposta: 3
     },
 }
