@@ -1,5 +1,42 @@
 ﻿var casa = '';
 
+function getDescricaoMateria(materia) {
+    switch (materia.toString().toLowerCase()) {
+        case 'portugues':
+            return "Língua Portuguesa e Literatura Brasileira";
+        case 'biologia':
+            return "Biologia";
+        case 'fisica':
+            return "Física";
+        case 'geografia':
+            return "Geografia";
+        case 'historia':
+            return "História";
+        case 'matematica':
+            return "Matemática";
+        case 'quimica':
+            return "Química";
+        case 'ingles':
+            return "Língua Inglesa";
+        case 'espanhol':
+            return "Língua Espanhola";
+        default:
+            return "";
+    }
+}
+
+function imprimirMateriaAno() {
+    let materia = document.getElementsByClassName("materia");
+    let ano = document.getElementsByClassName("ano");
+
+    let url = window.location;
+    let regex = new RegExp("[0-9]{4}\.[0-9]{1}\/.*\/");
+    let descricao = regex.exec(url);
+    let itens = descricao.toString().split("/");
+
+    materia[0].innerHTML = getDescricaoMateria(itens[1]);
+    ano[0].innerHTML = itens[0];
+}
 
 function imprimirPergunta() {
 
@@ -98,13 +135,14 @@ function verResposta() {
 
 $(document).ready(function() {
 
-    var respostas = new Array(),
-        repostaSelecionada = '',
-        repostaCorreta = '',
-        linkFacebook = '';
+    var repostaSelecionada = '',
+        repostaCorreta = '';
 
     /* Imprimir a pergunta */
     imprimirPergunta();
+
+    /* Imprimir a matéria e o ano da prova */
+    imprimirMateriaAno();
 
     /* =============================================================================================
     ==============================================================================================*/
