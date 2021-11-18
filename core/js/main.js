@@ -41,11 +41,11 @@ function imprimirPergunta() {
 
     /* Gerar ordem aleatórias das respostas */
     ordemDasPerguntas = [];
-    for (var nI = 0; nI < 5; nI++) {
+    for (var nI = 0; nI < 4; nI++) {
 
-        gerarOrdem = Math.floor(Math.random() * 5);
+        gerarOrdem = Math.floor(Math.random() * 4);
         while (ordemDasPerguntas.indexOf(gerarOrdem) >= 0) {
-            gerarOrdem = Math.floor(Math.random() * 5);
+            gerarOrdem = Math.floor(Math.random() * 4);
         }
 
         ordemDasPerguntas.push(gerarOrdem);
@@ -67,9 +67,6 @@ function imprimirPergunta() {
 
         '	<input type="radio" name="respostas" id="D" value=" ' + ordemDasPerguntas[3] + ' "> ' +
         '	<label for="D">' + quiz[perguntaAleatoria].alternativas[ordemDasPerguntas[3]] + '</label><br/>' +
-
-        '	<input type="radio" name="respostas" id="E" value=" ' + ordemDasPerguntas[4] + ' "> ' +
-        '	<label for="E">' + quiz[perguntaAleatoria].alternativas[ordemDasPerguntas[4]] + '</label>' +
 
         '    <input type="hidden" name="respostaCorreta" value="' + quiz[perguntaAleatoria].resposta + '">' +
         '</form>';
@@ -135,7 +132,7 @@ $(document).ready(function() {
                 });
 
         } else
-            sweetAlert("Seu animal !", "Resposta errada !", "error");
+            sweetAlert("Errou", "Resposta errada !", "error");
 
     });
 });
